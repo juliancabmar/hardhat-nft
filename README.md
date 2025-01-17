@@ -1,21 +1,3 @@
-# The Ultimate NFT Repo
-
-*[⌨️ (20:28:51) Lesson 14: Hardhat NFTs ](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=73731s)*
-
-[Full Repo](https://github.com/smartcontractkit/full-blockchain-solidity-course-js)
-
-*This repo has been updated to work with Sepolia over Goerli.*
-
-<br/>
-<p align="center">
-<img src="./images/randomNft/pug.png" width="225" alt="NFT Pug">
-<img src="./images/dynamicNft/happy.svg" width="225" alt="NFT Happy">
-<img src="./images/randomNft/shiba-inu.png" width="225" alt="NFT Shiba">
-<img src="./images/dynamicNft/frown.svg" width="225" alt="NFT Frown">
-<img src="./images/randomNft/st-bernard.png" width="225" alt="NFT St.Bernard">
-</p>
-<br/>
-
 We go through creating 3 different kinds of NFTs.
 
 1. A Basic NFT
@@ -42,17 +24,9 @@ We go through creating 3 different kinds of NFTs.
 ## Quickstart
 
 ```
-git clone https://github.com/PatrickAlphaC/hardhat-nft-fcc
-cd hardhat-nft-fcc
+git clone https://github.com/juliancabmar/hardhat-nft
+cd hardhat-nft
 yarn
-```
-
-## Typescript
-
-If you want to get to typescript and you cloned the javascript version, just run:
-
-```
-git checkout typescript
 ```
 
 
@@ -145,16 +119,6 @@ However, you can manual verify with:
 yarn hardhat verify --constructor-args arguments.ts DEPLOYED_CONTRACT_ADDRESS
 ```
 
-### Typescript differences
-1. `.js` files are now `.ts`
-2. We added a bunch of typescript and typing packages to our `package.json`. They can be installed with:
-   1. `yarn add @typechain/ethers-v5 @typechain/hardhat @types/chai @types/node ts-node typechain typescript`
-3. The biggest one being [typechain](https://github.com/dethcrypto/TypeChain)
-   1. This gives your contracts static typing, meaning you'll always know exactly what functions a contract can call. 
-   2. This gives us `factories` that are specific to the contracts they are factories of. See the tests folder for a version of how this is implemented. 
-4. We use `imports` instead of `require`. Confusing to you? [Watch this video](https://www.youtube.com/watch?v=mK54Cn4ceac)
-5. Add `tsconfig.json`
-
 # Linting
 
 To check linting / code formatting:
@@ -165,16 +129,4 @@ or, to fix:
 ```
 yarn lint:fix
 ```
-
-# Thank you!
-
-If you appreciated this, feel free to follow me or donate!
-
-ETH/Polygon/Avalanche/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
-
 
